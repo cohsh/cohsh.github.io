@@ -1,5 +1,5 @@
 # Kohei Ishii
-## Research Interest
+## Research Interests
 - First-principles calculation
 - Electron-phonon interaction
 - Many-body quantum theory
