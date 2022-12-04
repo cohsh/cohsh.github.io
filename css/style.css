@@ -8,14 +8,16 @@ body {
   'ＭＳ Ｐゴシック',
   'MS PGothic',
   sans-serif;
+  font-size: 1vw
 }
+
 header {width:100%;background-color:#A4CA68;text-align:center}
 footer{clear:both;width:100%;background-color:#A4CA68;text-align:center}
 
 ul.side {list-style:none;padding:0;margin:0;text-align:center}
 
 div.container {position:relative;height:100%;}
-div.side {float:left;top:3em;width:20%;background-color:#A4CA68;height:100%;padding:0.5em}
+div.side {float:left;top:3em;width:25%;background-color:#A4CA68;height:100%;padding:0.5em}
 div.main {float:right;position:relative;width:70%;height:100%}
 
 dt {font-weight:bold}
