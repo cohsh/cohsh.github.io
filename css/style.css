@@ -1,0 +1,21 @@
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3',
+  'Hiragino Kaku Gothic Pro',
+  'メイリオ',
+  'Meiryo',
+  '游ゴシック',
+  'Yu Gothic',
+  'ＭＳ Ｐゴシック',
+  'MS PGothic',
+  sans-serif;
+}
+header {width:100%;background-color:#A4CA68;text-align:center}
+footer{clear:both;width:100%;background-color:#A4CA68;text-align:center}
+
+ul.side {list-style:none;padding:0;margin:0;text-align:center}
+
+div.container {position:relative;height:100%;}
+div.side {float:left;top:3em;width:20%;background-color:#A4CA68;height:100%;padding:0.5em}
+div.main {float:right;position:relative;width:70%;height:100%}
+
+dt {font-weight:bold}
