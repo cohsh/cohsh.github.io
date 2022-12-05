@@ -1,4 +1,4 @@
-# ko-ishii.github.io
+# cohsh.github.io
 
 Kohei Ishii's Web Page
 
