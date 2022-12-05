@@ -1,15 +1,4 @@
-body {
-  font-family: 'ヒラギノ角ゴ Pro W3',
-  'Hiragino Kaku Gothic Pro',
-  'メイリオ',
-  'Meiryo',
-  '游ゴシック',
-  'Yu Gothic',
-  'ＭＳ Ｐゴシック',
-  'MS PGothic',
-  sans-serif;
-  font-size: 1vw
-}
+body {font-size: 1vw}
 
 header {width:100%;background-color:#A4CA68;text-align:center}
 footer{position:absolute;bottom:0;width:100%;background-color:#A4CA68;text-align:center}
