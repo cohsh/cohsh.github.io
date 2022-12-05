@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Kohei Ishii (石井 浩平)</title>
-    <style type="text/css">
-        #top {background-color:#DAEAD0}
-    </style>
-    <script>
-        MathJax = {
-            chtml: {
-                matchFontHeight: false
-            },
-            tex: {
-                inlineMath: [['$', '$']]
-            }
-        };
-    </script>
-    <script id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-    </script>
-  </head>
-  <body>
-    <header><h1>Kohei Ishii (石井 浩平)</h1></header>
-    <div class="side" id="for">
-      <ul class="side">
-        <li id="top"><a href="index.html">Top</a></li>
-        <li id="research"><a href="research.html">Research</a></li>
-        <li id="cv"><a href="cv.html">CV</a></li>
-        <li id="publication"><a href="publication.html">Publication</a></li>
-        <li id="presentation"><a href="presentation.html">Presentation</a></li>
-      </ul>
-    </div>
-    <div class="container">
-      <div class="main">
-        <h2>Profile</h2>
-            <dl>
-                <dt>Position</dt>
-                <dd>Ph.D. Student</dd>
-                <dt>Affiliation</dt>
-                <dd>Department of Physics, Graduate School of Science,<br>
-                    The University of Tokyo, Japan</dd>
-                <dt>Group</dt>
-                <dd><a href="https://sugino.issp.u-tokyo.ac.jp">Sugino Group</a>, The Institute for Solid State Physics (ISSP)</dd>
-                <dt>Mail</dt>
-                <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
-            </dl>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <div id="head"></div>
+    </head>
+    <body id="page-top">
+        <header id="header"></header>
+        <div id="sidebar"></div>
+        <div class="container">
+            <div class="main">
+                <h2>Profile</h2>
+                <dl>
+                    <dt>Position</dt>
+                    <dd>Ph.D. Student</dd>
+                    <dt>Affiliation</dt>
+                    <dd>Department of Physics, Graduate School of Science,<br>
+                        The University of Tokyo, Japan</dd>
+                    <dt>Group</dt>
+                    <dd><a href="https://sugino.issp.u-tokyo.ac.jp">Sugino Group</a>, The Institute for Solid State Physics (ISSP)</dd>
+                    <dt>Mail</dt>
+                    <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
+                </dl>
 
-            <h2>Link</h2>
-            <ul>
-                <li><a href="https://github.com/cohsh">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
-                <li><a href="https://twitter.com/cohsh_">Twitter</a></li>
-            </ul>
-      </div>
-    </div>
-    <footer>&copy 2022 Kohei Ishii</footer> 
-  </body>
+                <h2>Link</h2>
+                <ul>
+                    <li><a href="https://github.com/cohsh">GitHub</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
+                    <li><a href="https://twitter.com/cohsh_">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer id="footer"></footer>
+        <script>
+            $(function () {
+                $("#head").load("head.html");
+                $("#header").load("header.html");
+                $("#sidebar").load("sidebar.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+    </body>
 </html>

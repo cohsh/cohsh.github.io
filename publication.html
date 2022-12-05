@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Kohei Ishii (石井 浩平)</title>
-        <style type="text/css">
-            #publication {background-color:#DAEAD0}
-        </style>
-        <script>
-            MathJax = {
-                chtml: {
-                    matchFontHeight: false
-                },
-                tex: {
-                    inlineMath: [['$', '$']]
-                }
-            };
-        </script>
-        <script id="MathJax-script" async
-                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <div id="head"></div>
     </head>
-    <body>
-        <header><h1>Kohei Ishii (石井 浩平)</h1></header>
-        <div class="side" id="for">
-            <ul class="side">
-                <li id="top"><a href="index.html">Top</a></li>
-                <li id="research"><a href="research.html">Research</a></li>
-                <li id="cv"><a href="cv.html">CV</a></li>
-                <li id="publication"><a href="publication.html">Publication</a></li>
-                <li id="presentation"><a href="presentation.html">Presentation</a></li>
-            </ul>
-        </div>
+    <body id="page-publication">
+        <header id="header"></header>
+        <div id="sidebar"></div>
         <div class="container">
             <div class="main">
                 <h2>Publication</h2>
@@ -50,6 +24,14 @@
                 </ol>
             </div>
         </div>
-        <footer><br></footer> 
+        <footer id="footer"></footer>
+        <script>
+            $(function () {
+                $("#head").load("head.html");
+                $("#header").load("header.html");
+                $("#sidebar").load("sidebar.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
     </body>
 </html>

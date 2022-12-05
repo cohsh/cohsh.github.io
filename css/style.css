@@ -21,3 +21,9 @@ div.side {float:left;top:3em;width:25%;background-color:#A4CA68;height:100%;padd
 div.main {float:right;position:relative;width:70%;height:100%}
 
 dt {font-weight:bold}
+
+#page-top #top {background-color:#DAEAD0}
+#page-research #research {background-color:#DAEAD0}
+#page-cv #cv {background-color:#DAEAD0}
+#page-publication #publication {background-color:#DAEAD0}
+#page-presentation #presentation {background-color:#DAEAD0}
