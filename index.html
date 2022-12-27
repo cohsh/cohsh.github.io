@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <div id="head"></div>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>
+            MathJax = {
+                chtml: {
+                    matchFontHeight: false
+                },
+                tex: {
+                    inlineMath: [['$', '$']]
+                }
+            };
+        </script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
     </head>
-    <body id="page-top">
-        <header id="header"></header>
+    <body>
+        <header></header>
+        <header><h1>Kohei Ishii (石井 浩平)</h1></header>
         <h5 id="lang"></h5>
         <div id="sidebar"></div>
         <div class="container">
@@ -31,14 +48,12 @@
                 </ul>
             </div>
         </div>
-        <footer id="footer"></footer>
+        <footer></footer>
+        <footer>&copy Kohei Ishii</footer> 
         <script>
             $(function () {
-                $("#head").load("../head.html");
-                $("#header").load("header.html");
                 $("#lang").load("lang.html");
                 $("#sidebar").load("sidebar.html");
-                $("#footer").load("footer.html");
             });
         </script>
     </body>
