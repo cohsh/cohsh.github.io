@@ -1,17 +1,26 @@
-body {font-family: 'Noto Sans JP', sans-serif; font-weight:100; color:#322C28; font-size:14pt}
+@media screen and (max-device-width: 699px) {
+    html {zoom: 80%}
+}
+
+@media screen and (max-device-width: 359px) {
+    html {zoom: 70%}
+}
+
+body {font-family: 'Noto Sans JP', sans-serif; font-weight:100; color:#43341B}
 a {color: #005E15}
 
 header {width:100%;background-color:#A4CA68;text-align:center}
 footer{position:fixed;bottom:0;width:100%;background-color:#A4CA68;text-align:center}
 
-ul.side {list-style:none;padding:0;margin:0;text-align:center;font-size:0.5rem}
 
 div.side {float:left;top:3em;width:20%;background-color:#A4CA68;height:100%;padding:0.2rem}
 div.container {position:relative;height:100%}
 div.main {float:right;position:relative;width:75%;height:100%;overflow-y:scroll}
 
-h1 {font-weight:300;font-size: 1rem}
-h2 {font-weight:300;font-size: 1rem}
-h3 {font-weight:300;font-size: 0.6rem}
-dt {font-weight:300;font-size: 0.6rem}
-#lang {font-size:0.5rem;font-weight:100}
+ul {list-style:none;margin:0}
+ul.side {padding:0;text-align:center}
+h1 {font-weight:100}
+h2 {font-weight:100}
+h3 {font-weight:100}
+dt {font-weight:100}
+#lang {font-weight:100}
