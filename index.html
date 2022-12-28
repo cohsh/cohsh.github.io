@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
         <script>
             MathJax = {
                 chtml: {
@@ -21,40 +20,22 @@
         </script>
     </head>
     <body>
-        <header></header>
         <header><h1>Kohei Ishii (石井 浩平)</h1></header>
-        <h5 id="lang"></h5>
-        <div id="sidebar"></div>
-        <div class="container">
-            <div class="main">
-                <h2>Profile</h2>
-                <dl>
-                    <dt>Position</dt>
-                    <dd>Ph.D. Student</dd>
-                    <dt>Affiliation</dt>
-                    <dd>Department of Physics, Graduate School of Science,<br>
-                        The University of Tokyo, Japan</dd>
-                    <dt>Group</dt>
-                    <dd><a href="https://sugino.issp.u-tokyo.ac.jp">Sugino Group</a>, The Institute for Solid State Physics (ISSP)</dd>
-                    <dt>Mail</dt>
-                    <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
-                </dl>
-
-                <h2>Link</h2>
-                <ul>
-                    <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
-                    <li><a href="https://github.com/cohsh">GitHub</a></li>
-                    <li><a href="https://twitter.com/cohsh_">Twitter</a></li>
-                </ul>
-            </div>
+        <h4 id="lang">English / <a href='javascript:setLangJa()'>日本語</a></h4>
+        <div class="side">
+            <ul class="side" id="sidebar"></ul>
         </div>
-        <footer></footer>
+        <div class="container">
+            <div class="main" id="main"></div>
+        </div>
         <footer>&copy Kohei Ishii</footer> 
-        <script>
-            $(function () {
-                $("#lang").load("lang.html");
-                $("#sidebar").load("sidebar.html");
-            });
-        </script>
+        <script src="dist/lang.js"></script>
+        <script src="dist/sidebar.js"></script>
+        <script src="dist/top.js"></script>
+        <script src="dist/research.js"></script>
+        <script src="dist/cv.js"></script>
+        <script src="dist/publication.js"></script>
+        <script src="dist/presentation.js"></script>
+        <script src="dist/init.js"></script>
     </body>
 </html>
