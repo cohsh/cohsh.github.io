@@ -43,11 +43,11 @@ function loadResearch() {
         <ul>
         <li>プログラミング [<a href="https://github.com/cohsh">GitHub</a>]
             <ul>
-        <li>Python, JavaScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
+        <li>Python, JavaScript/TypeScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
         </ul>
         <li>マークアップ</li>
         <ul>
-        <li>$\\LaTeX$, HTML, Markdown</li>
+        <li>LaTeX, HTML, Markdown</li>
         </ul>
         </ul>
         </div>`
