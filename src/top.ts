@@ -27,8 +27,9 @@ function loadTop() {
         <h2>プロフィール</h2>
         <dl>
         <dt>所属</dt>
-        <dd>東京大学　大学院理学系研究科　物理学専攻　博士課程</dd>
-        <dd>物性研究所（ISSP）　<a href="https://sugino.issp.u-tokyo.ac.jp">杉野研究室</a></dd>
+        <dd>東京大学<br>大学院理学系研究科<br>物理学専攻博士課程</dd>
+        <dt>研究室</dt>
+        <dd>物性研究所<a href="https://sugino.issp.u-tokyo.ac.jp">杉野研究室</a></dd>
             <dt>メール</dt>
         <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
         </dl>
