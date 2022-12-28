@@ -16,7 +16,7 @@ function loadResearch() {
             </ul>
         <h3>Skill</h3>
         <ul>
-        <li>Programming [<a href="https://github.com/cohsh">GitHub</a>]
+        <li>Programming</li>
             <ul>
         <li>Python, JavaScript/TypeScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
         </ul>
@@ -41,7 +41,7 @@ function loadResearch() {
             </ul>
         <h3>スキル</h3>
         <ul>
-        <li>プログラミング [<a href="https://github.com/cohsh">GitHub</a>]
+        <li>プログラミング</li>
             <ul>
         <li>Python, JavaScript/TypeScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
         </ul>
