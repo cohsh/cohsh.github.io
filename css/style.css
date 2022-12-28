@@ -4,7 +4,7 @@ a {color: #005E15}
 header {width:100%;background-color:#A4CA68;text-align:center}
 footer{position:fixed;bottom:0;width:100%;background-color:#A4CA68;text-align:center}
 
-ul.side {list-style:none;padding:0;margin:0;text-align:center;font-size:0.1rem}
+ul.side {list-style:none;padding:0;margin:0;text-align:center;font-size:0.5rem}
 
 div.side {float:left;top:3em;width:20%;background-color:#A4CA68;height:100%;padding:0.2rem}
 div.container {position:relative;height:100%}
