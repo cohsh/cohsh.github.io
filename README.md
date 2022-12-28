@@ -1,6 +1,6 @@
 # cohsh.github.io
 
-Kohei Ishii's Web Page
+Kohei Ishii Official Website
 
 ## Branch
 - [main](https://github.com/cohsh/cohsh.github.io/tree/main)
