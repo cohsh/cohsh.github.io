@@ -6,9 +6,9 @@ footer{position:fixed;bottom:0;width:100%;background-color:#A4CA68;text-align:ce
 
 ul.side {list-style:none;padding:0;margin:0;text-align:center;font-size:0.7rem}
 
-div.container {position:relative;height:100%}
 div.side {float:left;top:3em;width:25%;background-color:#A4CA68;height:100%;padding:0.2rem}
-div.main {float:right;position:relative;width:70%;height:100%}
+div.container {position:relative;height:100%}
+div.main {float:right;position:relative;width:70%;height:100%;overflow-y:scroll}
 
 dt {font-weight:bold}
 
