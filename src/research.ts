@@ -7,7 +7,10 @@ function loadResearch() {
         <h3>Interest</h3>
         <ul>
         <li>Condensed matter physics</li>
-        <li>First-principles calculation</li>
+        <ul>
+        <li>Electron-phonon interactions</li>
+        </ul>
+        <li>First-principles calculations</li>
         </ul>
         <h3>Tool</h3>
         <ul>
@@ -17,7 +20,7 @@ function loadResearch() {
         <h3>Skill</h3>
         <ul>
         <li>Programming</li>
-            <ul>
+        <ul>
         <li>Python, JavaScript/TypeScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
         </ul>
         <li>Markup</li>
@@ -32,6 +35,9 @@ function loadResearch() {
         <h3>興味</h3>
         <ul>
         <li>物性物理学</li>
+        <ul>
+        <li>電子・フォノン相互作用</li>
+        </ul>
         <li>第一原理計算</li>
         </ul>
         <h3>ツール</h3>
@@ -42,7 +48,7 @@ function loadResearch() {
         <h3>スキル</h3>
         <ul>
         <li>プログラミング</li>
-            <ul>
+        <ul>
         <li>Python, JavaScript/TypeScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
         </ul>
         <li>マークアップ</li>
