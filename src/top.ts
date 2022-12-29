@@ -5,6 +5,8 @@ function loadTop() {
         document.getElementById('main').innerHTML = `<div>
         <h2>Profile</h2>
         <dl>
+        <dt>Name</dt>
+        <dd>Kohei Ishii</dd>
         <dt>Position</dt>
         <dd>Ph.D. Student</dd>
         <dt>Affiliation</dt>
@@ -26,11 +28,13 @@ function loadTop() {
         document.getElementById('main').innerHTML = `<div>
         <h2>プロフィール</h2>
         <dl>
+        <dt>名前</dt>
+        <dd>石井浩平</dd>
         <dt>所属</dt>
-        <dd>東京大学<br>大学院理学系研究科<br>物理学専攻博士課程</dd>
+        <dd>東京大学大学院理学系研究科<br>物理学専攻博士課程</dd>
         <dt>研究室</dt>
         <dd>物性研究所<a href="https://sugino.issp.u-tokyo.ac.jp">杉野研究室</a></dd>
-            <dt>メール</dt>
+        <dt>メール</dt>
         <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
         </dl>
 
