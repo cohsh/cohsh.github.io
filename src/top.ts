@@ -19,10 +19,11 @@ function loadTop() {
         </dl>
         <h2>Link</h2>
         <ul>
-        <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
+        <li><a href="https://orcid.org/0000-0002-6343-1647">ORCID</a></li>
+            <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
             <li><a href="https://github.com/cohsh">GitHub</a></li>
             <li><a href="https://twitter.com/cohsh_">Twitter</a></li>
-            </ul>
+        </ul>
         </div>`
     } else if (lang === 'ja') {
         document.getElementById('main').innerHTML = `<div>
@@ -34,12 +35,13 @@ function loadTop() {
         <dd>東京大学大学院理学系研究科<br>物理学専攻博士課程</dd>
         <dt>研究室</dt>
         <dd>物性研究所<a href="https://sugino.issp.u-tokyo.ac.jp">杉野研究室</a></dd>
-        <dt>メール</dt>
+            <dt>メール</dt>
         <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
         </dl>
 
         <h2>リンク</h2>
         <ul>
+        <li><a href="https://orcid.org/0000-0002-6343-1647">ORCID</a></li>
         <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
             <li><a href="https://github.com/cohsh">GitHub</a></li>
             <li><a href="https://twitter.com/cohsh_">Twitter</a></li>

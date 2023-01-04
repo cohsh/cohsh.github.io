@@ -15,7 +15,7 @@ function loadCV() {
         <dt>April 2013 - March 2015</dt>
         <dd>College of Arts and Sciences, The University of Tokyo</dd>
         <dt>April 2009 - March 2012</dt>
-        <dd>Saitama Prefectural Ohmiya High School (Science and Mathematics Department)</dd>
+        <dd>Science and Mathematics Department, Saitama Prefectural Omiya High School</dd>
         </dl>
         <h3>Funding</h3>
         <dl>
