@@ -23,6 +23,7 @@ function loadTop() {
             <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
             <li><a href="https://github.com/cohsh">GitHub</a></li>
             <li><a href="https://twitter.com/cohsh_">Twitter</a></li>
+            <li><a href="https://cohsh.github.io/blog/">Blog</a></li>
         </ul>
         </div>`
     } else if (lang === 'ja') {
@@ -45,6 +46,7 @@ function loadTop() {
         <li><a href="https://scholar.google.com/citations?user=QR65JkUAAAAJ">Google Scholar</a></li>
             <li><a href="https://github.com/cohsh">GitHub</a></li>
             <li><a href="https://twitter.com/cohsh_">Twitter</a></li>
+            <li><a href="https://cohsh.github.io/blog/">Blog</a></li>
             </ul>
         </div>`
     }
