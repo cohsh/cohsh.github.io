@@ -31,7 +31,7 @@ function loadResearch() {
         </ul>
         <li>Markup</li>
         <ul>
-        <li>LaTeX, HTML, Markdown</li>
+        <li>LaTeX, HTML/Markdown</li>
         </ul>
         </ul>
         </div>`
@@ -65,7 +65,7 @@ function loadResearch() {
         </ul>
         <li>マークアップ</li>
         <ul>
-        <li>LaTeX, HTML, Markdown</li>
+        <li>LaTeX, HTML/Markdown</li>
         </ul>
         </ul>
         </div>`
