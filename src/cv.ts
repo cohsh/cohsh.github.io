@@ -19,7 +19,7 @@ function loadCV() {
         </dl>
         <h3>Funding</h3>
         <dl>
-        <dt>October 2021 - Present</dt>
+        <dt>October 2021 - March 2023</dt>
         <dd>JST SPRING, Grant Number JPMJSP2108</dd>
         </dl>
         </div>`
@@ -41,7 +41,7 @@ function loadCV() {
         </dl>
         <h3>研究費</h3>
         <dl>
-        <dt>2021年10月 - 現在</dt>
+        <dt>2021年10月 - 2023年3月</dt>
         <dd>JST SPRING, Grant Number JPMJSP2108</dd>
         </dl>
         </div>`
