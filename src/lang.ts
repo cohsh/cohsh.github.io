@@ -17,6 +17,8 @@ function setLangEn() {
 function reload() {
     if (page === 'top') {
         loadTop()
+    } else if (page === 'profile') {
+        loadProfile()
     } else if (page === 'research') {
         loadResearch()
     } else if (page === 'cv') {
