@@ -18,16 +18,11 @@ function loadResearch() {
         <li>Density functional perturbation theory (DFPT)</li>
         </ul>
         </ul>
-        <h3>Tool</h3>
-        <ul>
-        <li>Quantum ESPRESSO [<a href="https://github.com/QEF/q-e">GitHub</a>]
-            [<a href="https://gitlab.com/QEF/q-e">GitLab</a>]</li>
-            </ul>
         <h3>Skill</h3>
         <ul>
         <li>Programming</li>
         <ul>
-        <li>Python, JavaScript/TypeScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
+        <li>Python, JavaScript/TypeScript, PHP, Ruby, Lua, Kotlin, C, C++, Rust, Fortran, Shell</li>
         </ul>
         <li>Markup</li>
         <ul>
@@ -52,16 +47,11 @@ function loadResearch() {
         <li>密度汎関数摂動理論 (DFPT)</li>
         </ul>
         </ul>
-        <h3>ツール</h3>
-        <ul>
-        <li>Quantum ESPRESSO [<a href="https://github.com/QEF/q-e">GitHub</a>]
-            [<a href="https://gitlab.com/QEF/q-e">GitLab</a>]</li>
-            </ul>
         <h3>スキル</h3>
         <ul>
         <li>プログラミング</li>
         <ul>
-        <li>Python, JavaScript/TypeScript, Kotlin, PHP, C/C++, Rust, Fortran, Shell</li>
+        <li>Python, JavaScript/TypeScript, PHP, Ruby, Lua, Kotlin, C, C++, Rust, Fortran, Shell</li>
         </ul>
         <li>マークアップ</li>
         <ul>
