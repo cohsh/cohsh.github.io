@@ -15,7 +15,7 @@ function loadProfile() {
         <dt>Research Theme</dt>
         <dd>Development of first-principles calculation methods for electron-phonon interactions</dd>
         <dt>Hobbies</dt>
-        <dd>painting, drawing, photography, cooking, literature, coffee</dd>
+        <dd>painting, drawing, photography, cooking, reading, coffee</dd>
         </dl>
         <h2>Link</h2>
         <ul>
@@ -36,11 +36,11 @@ function loadProfile() {
         <dt>研究テーマ</dt>
         <dd>電子・フォノン相互作用の第一原理計算手法の開発</dd>
         <dt>趣味</dt>
-        <dd>絵、写真、料理、文学、珈琲</dd>
+        <dd>絵、写真、料理、読書、珈琲</dd>
         </dl>
         <h2>リンク</h2>
         <ul>
-            <li><a href="https://x.com/cohsh_">X</a> (研究)</li>
+            <li><a href="https://x.com/cohsh_">X</a>（研究）</li>
             <li><a href="https://x.com/cohsh_t">X</a>（趣味）</li>
             <li><a href="https://www.instagram.com/cohsh_">Instagram</a>（絵）</li>
             <li><a href="https://www.instagram.com/cohsh_t">Instagram</a>（写真）</li>
