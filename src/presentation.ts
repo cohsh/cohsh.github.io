@@ -9,6 +9,15 @@ function loadPresentation() {
         <li>
         <u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino,
         <br>
+        "Evaluating the Importance of Second-Order Electron-Phonon Interactions in the Empty Lattice Model" (in Japanese),
+        <br>
+        2024 Annual (79th) Meeting, The Physical Society of Japan.
+        <br>
+        (September 16th, 2024, Sapporo Campus, Hokkaido University)
+        </li>
+        <li>
+        <u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino,
+        <br>
         "First-principles calculations of band gaps incorporating electron-phonon interactions to infinite order" (in Japanese),
         <br>
         Autumn Meeting 2022, The Physical Society of Japan. 
@@ -79,6 +88,15 @@ function loadPresentation() {
         <h2>講演</h2>
         <h3>口頭（国内）</h3>
         <ol reversed>
+        <li>
+        <u>石井浩平</u>, 春山潤, 杉野修,
+        <br>
+        "空格子模型における二次の電子・フォノン相互作用の重要性の評価",
+        <br>
+        日本物理学会第79回年次大会.
+        <br>
+        （2024年9月16日, 北海道大学札幌キャンパス）
+        </li>
         <li>
         <u>石井浩平</u>, 春山潤, 杉野修,
         <br>
