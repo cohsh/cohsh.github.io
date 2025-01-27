@@ -4,19 +4,15 @@ function loadResearch() {
     if (lang === 'en') {
         document.getElementById('main').innerHTML = `<div>
         <h2>Research</h2>
-        <h3>Interest</h3>
+        <h3>Keywords</h3>
         <ul>
-        <li>Condensed matter physics</li>
-        <ul>
-        <li>Electron-phonon interactions</li>
-        <li>Electronic states</li>
-        <li>Phonons</li>
-        </ul>
-        <li>First-principles calculations</li>
-        <ul>
-        <li>Density functional theory (DFT)</li>
-        <li>Density functional perturbation theory (DFPT)</li>
-        </ul>
+        <li>
+            first-principles calculation,
+            many-body perturbation theory,
+            electron-phonon interactions,
+            density functional theory,
+            density functional perturbation theory
+        </li>
         </ul>
         <h3>Skill</h3>
         <ul>
@@ -33,19 +29,11 @@ function loadResearch() {
     } else if (lang === 'ja') {
         document.getElementById('main').innerHTML = `<div>
         <h2>研究</h2>
-        <h3>興味</h3>
+        <h3>キーワード</h3>
         <ul>
-        <li>物性物理学</li>
-        <ul>
-        <li>電子・フォノン相互作用</li>
-        <li>電子状態</li>
-        <li>フォノン</li>
-        </ul>
-        <li>第一原理計算</li>
-        <ul>
-        <li>密度汎関数理論 (DFT)</li>
-        <li>密度汎関数摂動理論 (DFPT)</li>
-        </ul>
+        <li>
+            第一原理計算、多体摂動論、電子・フォノン相互作用、密度汎関数理論、密度汎関数摂動理論
+        </li>
         </ul>
         <h3>スキル</h3>
         <ul>
