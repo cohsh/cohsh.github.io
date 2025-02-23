@@ -3,7 +3,7 @@ function loadCV() {
     loadSidebar()
     if (lang === 'en') {
         document.getElementById('main').innerHTML = `<div>
-        <h2>CV</h2>
+        <h2>Curriculum Vitae</h2>
         <h3>Education</h3>
         <dl>
         <dt>April 2020 - Present</dt>
