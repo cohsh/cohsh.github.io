@@ -7,12 +7,11 @@ function loadTop() {
         <dt>Name</dt>
         <dd>Kohei Ishii</dd>
         <dt>Position</dt>
-        <dd>Ph.D. Student</dd>
+        <dd>Project Researcher</dd>
         <dt>Affiliation</dt>
-        <dd>Department of Physics, Graduate School of Science,<br>
-        The University of Tokyo, Japan</dd>
+        <dd>The Institute for Solid State Physics (ISSP), The University of Tokyo, Japan</dd>
         <dt>Group</dt>
-        <dd><a href="https://sugino.issp.u-tokyo.ac.jp">Sugino Group</a>, The Institute for Solid State Physics (ISSP)</dd>
+        <dd><a href="https://www.issp.u-tokyo.ac.jp/maincontents/organization/labs/inui_group_en.html">Inui Group</a>, Division of Data-Integrated Materials Science, Social Cooperation Research Department</dd>
                 <dt>Mail</dt>
             <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
         </dl>
@@ -31,9 +30,9 @@ function loadTop() {
         <dt>名前</dt>
         <dd>石井浩平</dd>
         <dt>所属</dt>
-        <dd>東京大学大学院理学系研究科<br>物理学専攻博士課程</dd>
+        <dd>東京大学物性研究所（特任研究員）</dd>
         <dt>研究室</dt>
-        <dd>物性研究所<a href="https://sugino.issp.u-tokyo.ac.jp">杉野研究室</a></dd>
+        <dd>社会連携研究部門　データ統合型材料物性研究部門　<a href="https://www.issp.u-tokyo.ac.jp/maincontents/organization/labs/inui_group.html">乾研究室</a></dd>
             <dt>メール</dt>
         <dd>kishii [.at.] issp.u-tokyo.ac.jp</dd>
         </dl>

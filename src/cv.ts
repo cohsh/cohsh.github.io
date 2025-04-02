@@ -6,7 +6,7 @@ function loadCV() {
         <h2>Curriculum Vitae</h2>
         <h3>Education</h3>
         <dl>
-        <dt>April 2020 - Present</dt>
+        <dt>April 2020 - March 2025</dt>
         <dd>Ph.D. Course, Department of Physics, Graduate School of Science, The University of Tokyo</dd>
         <dt>April 2017 - March 2020</dt>
         <dd>Master Course, Department of Physics, Graduate School of Science, The University of Tokyo</dd>
@@ -28,7 +28,7 @@ function loadCV() {
         <h2>略歴</h2>
         <h3>学歴</h3>
         <dl>
-        <dt>2020年4月 - 現在</dt>
+        <dt>2020年4月 - 2025年3月</dt>
         <dd>東京大学大学院理学系研究科<br>物理学専攻（博士課程）</dd>
         <dt>2017年4月 - 2020年3月</dt>
         <dd>東京大学大学院理学系研究科<br>物理学専攻（修士課程）</dd>
