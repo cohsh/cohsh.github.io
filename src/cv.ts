@@ -4,6 +4,11 @@ function loadCV() {
     if (lang === 'en') {
         document.getElementById('main').innerHTML = `<div>
         <h2>Curriculum Vitae</h2>
+        <h3>Employment</h3>
+        <dl>
+        <dt>April 2025 - Present</dt>
+        <dd>Project Researcher,<br>Division of Data-Integrated Materials Science, Social Cooperation Research Departments, The Institute for Solid State Physics, The University of Tokyo</dd>
+        </dl>
         <h3>Education</h3>
         <dl>
         <dt>April 2020 - March 2025</dt>
@@ -26,6 +31,11 @@ function loadCV() {
     } else if (lang === 'ja') {
         document.getElementById('main').innerHTML = `<div>
         <h2>略歴</h2>
+        <h3>職歴</h3>
+        <dl>
+        <dt>2025年4月 - 現在</dt>
+        <dd>東京大学物性研究所 社会連携研究部門 データ統合型材料物性研究部門<br>特任研究員</dd>
+        </dl>
         <h3>学歴</h3>
         <dl>
         <dt>2020年4月 - 2025年3月</dt>
