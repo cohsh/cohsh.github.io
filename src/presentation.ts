@@ -7,6 +7,15 @@ function loadPresentation() {
         <h3>Oral (Domestic)</h3>
         <ol reversed>
         <li>
+        <u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui,
+        <br>
+        "First-Principles Inverse Design of Magnetic Materials by Automatic Differentiation",
+        <br>
+        Fourth Workshop on Density Functional Theory: Fundamentals, Developments, and Applications (DFT2026)
+        <br>
+        (January 28th, 2026, Research Center for Nuclear Physics, The University of Osaka)
+        </li>
+        <li>
         <u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino,
         <br>
         "Evaluating the Importance of Second-Order Electron-Phonon Interactions in the Empty Lattice Model" (in Japanese),
@@ -45,6 +54,15 @@ function loadPresentation() {
         </ol>
         <h3>Poster (Domestic)</h3>
         <ol reversed>
+        <li>
+        <u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui,
+        <br>
+        "First-Principles Inverse Magnetic Materials Design by Automatic Differentiation",
+        <br>
+        The 26th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-26)
+        <br>
+        (October 28th, 2026, Tsukuba International Congress Center, Tsukuba, Japan)
+        </li>
         <li>
         <u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino,
         <br>
@@ -89,6 +107,15 @@ function loadPresentation() {
         <h3>口頭（国内）</h3>
         <ol reversed>
         <li>
+        <u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地,
+        <br>
+        "First-Principles Inverse Design of Magnetic Materials by Automatic Differentiation",
+        <br>
+        Fourth Workshop on Density Functional Theory: Fundamentals, Developments, and Applications (DFT2026)
+        <br>
+        （2026年1月28日, 大阪大学核物理研究センター）
+        </li>
+        <li>
         <u>石井浩平</u>, 春山潤, 杉野修,
         <br>
         "空格子模型における二次の電子・フォノン相互作用の重要性の評価",
@@ -127,6 +154,15 @@ function loadPresentation() {
         </ol>
         <h3>ポスター（国内）</h3>
         <ol reversed>
+                <li>
+        <u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地,
+        <br>
+        "First-Principles Inverse Magnetic Materials Design by Automatic Differentiation",
+        <br>
+        The 26th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-26)
+        <br>
+        （2026年10月28日, つくば国際会議場）
+        </li>
         <li>
         <u>石井浩平</u>, 春山潤, 杉野修,
         <br>
