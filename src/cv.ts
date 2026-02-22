@@ -27,6 +27,11 @@ function loadCV() {
         <dt>October 2021 - March 2023</dt>
         <dd>JST SPRING, Grant Number JPMJSP2108</dd>
         </dl>
+        <h3>Organizing</h3>
+        <dl>
+        <dt>February 22, 2025 - February 4, 2026</dt>
+        <dd>Organizer, "MateriAI 2025: Utilization of AI technology in the field of computational materials science"</dd>
+        </dl>
         </div>`
     } else if (lang === 'ja') {
         document.getElementById('main').innerHTML = `<div>
@@ -53,6 +58,11 @@ function loadCV() {
         <dl>
         <dt>2021年10月 - 2023年3月</dt>
         <dd>JST SPRING, Grant Number JPMJSP2108</dd>
+        </dl>
+        <h3>運営</h3>
+        <dl>
+        <dt>2025年2月22日 - 2026年2月4日</dt>
+        <dd>「MateriAI 2025 〜 計算物質科学分野におけるAI技術の活用」世話人</dd>
         </dl>
         </div>`
     }    
