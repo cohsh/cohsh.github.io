@@ -7,6 +7,12 @@
         "items": [
           {
             "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
+            "title": "First-Principles Inverse Design of Materials via Automatic Differentiation",
+            "venue": "2026 Spring Meeting, The Physical Society of Japan.",
+            "date": "(March 25th, 2026, Online)"
+          },
+          {
+            "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
             "title": "First-Principles Inverse Design of Magnetic Materials by Automatic Differentiation",
             "venue": "Fourth Workshop on Density Functional Theory: Fundamentals, Developments, and Applications (DFT2026)",
             "date": "(January 28th, 2026, Research Center for Nuclear Physics, The University of Osaka)"
@@ -80,6 +86,12 @@
       {
         "title": "口頭（国内）",
         "items": [
+          {
+            "authors": "<u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地",
+            "title": "自動微分を組み合わせた第一原理計算による物質の逆設計手法の開発",
+            "venue": "日本物理学会2026年春季大会.",
+            "date": "（2026年3月25日, オンライン）"
+          },
           {
             "authors": "<u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地",
             "title": "First-Principles Inverse Design of Magnetic Materials by Automatic Differentiation",
