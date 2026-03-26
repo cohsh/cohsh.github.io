@@ -1,0 +1,68 @@
+{
+  "en": {
+    "title": "Curriculum Vitae",
+    "sections": [
+      {
+        "title": "Employment",
+        "items": [
+          { "period": "April 2025 - Present", "description": "Project Researcher,<br>Division of Data-Integrated Materials Science, Social Cooperation Research Departments, The Institute for Solid State Physics, The University of Tokyo" }
+        ]
+      },
+      {
+        "title": "Education",
+        "items": [
+          { "period": "April 2020 - March 2025", "description": "Ph.D. Course, Department of Physics, Graduate School of Science, The University of Tokyo" },
+          { "period": "April 2017 - March 2020", "description": "Master Course, Department of Physics, Graduate School of Science, The University of Tokyo" },
+          { "period": "April 2015 - March 2017", "description": "Department of Physics, Faculty of Science, The University of Tokyo" },
+          { "period": "April 2013 - March 2015", "description": "College of Arts and Sciences, The University of Tokyo" },
+          { "period": "April 2009 - March 2012", "description": "Science and Mathematics Department, Saitama Prefectural Omiya High School" }
+        ]
+      },
+      {
+        "title": "Funding",
+        "items": [
+          { "period": "October 2021 - March 2023", "description": "JST SPRING, Grant Number JPMJSP2108" }
+        ]
+      },
+      {
+        "title": "Organizing",
+        "items": [
+          { "period": "February 2-4, 2026", "description": "Organizer, \"MateriAI 2025: Utilization of AI technology in the field of computational materials science\"" }
+        ]
+      }
+    ]
+  },
+  "ja": {
+    "title": "略歴",
+    "sections": [
+      {
+        "title": "職歴",
+        "items": [
+          { "period": "2025年4月 - 現在", "description": "東京大学物性研究所 社会連携研究部門 データ統合型材料物性研究部門<br>特任研究員" }
+        ]
+      },
+      {
+        "title": "学歴",
+        "items": [
+          { "period": "2020年4月 - 2025年3月", "description": "東京大学大学院理学系研究科<br>物理学専攻（博士課程）" },
+          { "period": "2017年4月 - 2020年3月", "description": "東京大学大学院理学系研究科<br>物理学専攻（修士課程）" },
+          { "period": "2015年4月 - 2017年3月", "description": "東京大学理学部物理学科" },
+          { "period": "2013年4月 - 2015年3月", "description": "東京大学教養学部（前期課程）理科二類" },
+          { "period": "2009年4月 - 2012年3月", "description": "埼玉県立大宮高等学校（理数科）" }
+        ]
+      },
+      {
+        "title": "研究費",
+        "items": [
+          { "period": "2021年10月 - 2023年3月", "description": "JST SPRING, Grant Number JPMJSP2108" }
+        ]
+      },
+      {
+        "title": "運営",
+        "items": [
+          { "period": "2026年2月2日-4日", "description": "「MateriAI 2025 〜 計算物質科学分野におけるAI技術の活用」世話人" }
+        ]
+      }
+    ]
+  }
+}

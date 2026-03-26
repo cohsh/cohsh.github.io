@@ -1,0 +1,35 @@
+{
+  "en": {
+    "info": [
+      { "label": "Name", "value": "Kohei Ishii" },
+      { "label": "Position", "value": "Project Researcher" },
+      { "label": "Affiliation", "value": "The Institute for Solid State Physics (ISSP), The University of Tokyo, Japan" },
+      { "label": "Group", "value": "<a href=\"https://www.issp.u-tokyo.ac.jp/maincontents/organization/labs/inui_group_en.html\">Inui Group</a>, Division of Data-Integrated Materials Science, Social Cooperation Research Department" },
+      { "label": "Mail", "value": "kishii [.at.] issp.u-tokyo.ac.jp" }
+    ],
+    "linksTitle": "Links",
+    "links": [
+      { "label": "ORCID", "url": "https://orcid.org/0000-0002-6343-1647" },
+      { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=QR65JkUAAAAJ" },
+      { "label": "GitHub", "url": "https://github.com/cohsh" },
+      { "label": "Blog", "url": "https://cohsh.github.io/blog/" },
+      { "label": "X", "url": "https://x.com/cohsh_" }
+    ]
+  },
+  "ja": {
+    "info": [
+      { "label": "名前", "value": "石井浩平" },
+      { "label": "所属", "value": "東京大学物性研究所（特任研究員）" },
+      { "label": "研究室", "value": "社会連携研究部門　データ統合型材料物性研究部門　<a href=\"https://www.issp.u-tokyo.ac.jp/maincontents/organization/labs/inui_group.html\">乾研究室</a>" },
+      { "label": "メール", "value": "kishii [.at.] issp.u-tokyo.ac.jp" }
+    ],
+    "linksTitle": "リンク",
+    "links": [
+      { "label": "ORCID", "url": "https://orcid.org/0000-0002-6343-1647" },
+      { "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=QR65JkUAAAAJ" },
+      { "label": "GitHub", "url": "https://github.com/cohsh" },
+      { "label": "Blog", "url": "https://cohsh.github.io/blog/" },
+      { "label": "X", "url": "https://x.com/cohsh_" }
+    ]
+  }
+}
