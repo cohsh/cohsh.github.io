@@ -15,7 +15,7 @@ footer{position:fixed;bottom:0;width:100%;background-color:#A4CA68;text-align:ce
 
 div.side {float:left;top:3em;width:20%;background-color:#A4CA68;height:100%;padding:0.2rem}
 div.container {position:relative;height:100%}
-div.main {float:right;position:relative;width:75%;height:100%;overflow-y:scroll}
+div.main {float:right;position:relative;width:75%;height:100%;overflow-y:scroll;padding-bottom:3em}
 
 ul {list-style:none;margin:0}
 ul.side {padding:0;text-align:center}
