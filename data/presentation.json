@@ -7,7 +7,7 @@
         "items": [
           {
             "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
-            "title": "First-Principles Inverse Design of Materials via Automatic Differentiation",
+            "title": "First-Principles Inverse Design of Materials via Automatic Differentiation\" (in Japanese)",
             "venue": "2026 Spring Meeting, The Physical Society of Japan.",
             "date": "(March 25th, 2026, Online)"
           },
@@ -47,10 +47,16 @@
         "title": "Poster (Domestic)",
         "items": [
           {
+            "authors": "<u>Kohei Ishii</u>, Michiharu Nakano, Masumi Sato, Tetsuya Fukushima, Makoto Saito, Takaki Sugiura, Kota Ido",
+            "title": "電子状態密度を記述子とした機械学習による酸素空孔生成エネルギーの予測と酸素吸蔵材の探索",
+            "venue": "スパコン共同利用研究会「計算物質科学の今と未来」,",
+            "date": "(April 2nd, 2026, The Institute for Solid State Physics, The University of Tokyo)"
+          },
+          {
             "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
             "title": "First-Principles Inverse Magnetic Materials Design by Automatic Differentiation",
             "venue": "The 26th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-26)",
-            "date": "(October 28th, 2026, Tsukuba International Congress Center, Tsukuba, Japan)"
+            "date": "(October 28th, 2025, Tsukuba International Congress Center, Tsukuba, Japan)"
           },
           {
             "authors": "<u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino",
@@ -128,10 +134,16 @@
         "title": "ポスター（国内）",
         "items": [
           {
+            "authors": "<u>石井浩平</u>, 中野道晴, 佐藤万純, 福島鉄也, 齋藤信, 杉浦孝樹, 井戸康太",
+            "title": "電子状態密度を記述子とした機械学習による酸素空孔生成エネルギーの予測と酸素吸蔵材の探索",
+            "venue": "スパコン共同利用研究会「計算物質科学の今と未来」.",
+            "date": "（2026年4月2日, 東京大学物性研究所）"
+          },
+          {
             "authors": "<u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地",
             "title": "First-Principles Inverse Magnetic Materials Design by Automatic Differentiation",
             "venue": "The 26th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-26)",
-            "date": "（2026年10月28日, つくば国際会議場）"
+            "date": "（2025年10月28日, つくば国際会議場）"
           },
           {
             "authors": "<u>石井浩平</u>, 春山潤, 杉野修",
