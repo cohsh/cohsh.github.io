@@ -6,6 +6,12 @@
         "title": "Oral (Domestic)",
         "items": [
           {
+            "authors": "<u>Kohei Ishii</u>",
+            "title": "A differentiable DFT-based framework for inverse materials design",
+            "venue": "Theory Seminar, The Institute for Solid State Physics, The University of Tokyo.",
+            "date": "(June 26th, 2026, The Institute for Solid State Physics, The University of Tokyo / Online)"
+          },
+          {
             "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
             "title": "First-Principles Inverse Design of Materials via Automatic Differentiation",
             "note": "(in Japanese)",
@@ -98,6 +104,12 @@
       {
         "title": "口頭（国内）",
         "items": [
+          {
+            "authors": "<u>石井浩平</u>",
+            "title": "A differentiable DFT-based framework for inverse materials design",
+            "venue": "物性研究所理論セミナー.",
+            "date": "（2026年6月26日, 東京大学物性研究所 / オンライン）"
+          },
           {
             "authors": "<u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地",
             "title": "自動微分を組み合わせた第一原理計算による物質の逆設計手法の開発",
