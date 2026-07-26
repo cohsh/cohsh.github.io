@@ -2,7 +2,7 @@
    Regenerate with `npm run font` after adding new kanji. */
 @font-face {
     font-family: "Noto Sans JP Subset";
-    src: url("../fonts/NotoSansJP-Thin-subset.woff2") format("woff2");
+    src: url("/fonts/NotoSansJP-Thin-subset.woff2") format("woff2");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -29,6 +29,7 @@ div.main {float:right;position:relative;width:75%;height:100%;overflow-y:scroll;
 
 ul {list-style:none;margin:0}
 ul.side {padding:0;text-align:center}
+ul.side li.current {background-color:#DAEAD0}
 h1 {font-weight:100}
 h2 {font-weight:100}
 h3 {font-weight:100}

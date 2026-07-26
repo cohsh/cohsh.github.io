@@ -1,35 +1,40 @@
-// Warn when the site gained characters that fonts/NotoSansJP-Thin-subset.woff2
-// does not cover. Those characters would silently fall back to a system font.
-// Run `npm run font` to regenerate the subset.
+// Warn when the generated pages contain characters that
+// fonts/NotoSansJP-Thin-subset.woff2 does not cover. Those characters would
+// silently fall back to a system font.  Run `npm run font` to regenerate.
 //
 // This mirrors content_chars() in scripts/build-font.py, and compares against
 // fonts/subset-charset.txt rather than parsing the woff2, so that an ordinary
 // build needs no Python.
 
-import { readFileSync, readdirSync } from 'node:fs'
+import { readFileSync, readdirSync, statSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)))
+const SKIP = new Set(['node_modules', '.git', '.font-src', 'scripts', 'data', 'css', 'fonts', 'posts'])
 
-const texts = []
-const walk = (node) => {
-    if (typeof node === 'string') texts.push(node)
-    else if (Array.isArray(node)) node.forEach(walk)
-    else if (node && typeof node === 'object') Object.values(node).forEach(walk)
+const pages = []
+const walk = (dir) => {
+    for (const name of readdirSync(dir).sort()) {
+        if (SKIP.has(name)) continue
+        const path = join(dir, name)
+        if (statSync(path).isDirectory()) walk(path)
+        else if (name === 'index.html') pages.push(path)
+    }
 }
+walk(root)
 
-for (const name of readdirSync(join(root, 'data')).sort()) {
-    if (name.endsWith('.json')) walk(JSON.parse(readFileSync(join(root, 'data', name), 'utf8')))
-}
-texts.push(readFileSync(join(root, 'index.html'), 'utf8'))
-for (const name of readdirSync(join(root, 'src')).sort()) {
-    if (name.endsWith('.ts')) texts.push(readFileSync(join(root, 'src', name), 'utf8'))
+if (pages.length === 0) {
+    console.error('no generated pages found — run `npm run build` first')
+    process.exit(1)
 }
 
 const used = new Set()
-for (const text of texts) {
-    for (const char of text.replace(/<[^>]*>/g, '')) {
+for (const path of pages) {
+    const text = readFileSync(path, 'utf8')
+        .replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/gi, '')
+        .replace(/<[^>]*>/g, '')
+    for (const char of text) {
         if (char.trim() !== '') used.add(char)
     }
 }
@@ -43,4 +48,4 @@ if (missing.length > 0) {
     process.exit(1)
 }
 
-console.log(`font subset covers all ${used.size} characters in use`)
+console.log(`font subset covers all ${used.size} characters across ${pages.length} pages`)

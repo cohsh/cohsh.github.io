@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Build a subset of Noto Sans JP containing only the characters this site uses.
 
-The whole site is served as static files, and every string it can display lives
-in data/*.json, index.html and src/*.ts. That makes it possible to ship a single
-small woff2 instead of the 124 unicode-range subsets Google Fonts would serve.
+The site is generated as static HTML, so the set of characters it can ever
+display is known ahead of time. That makes it possible to ship a single small
+woff2 instead of the 124 unicode-range subsets Google Fonts would serve.
 
 Usage:  npm run font        (or: python3 scripts/build-font.py)
 Requires: pip install fonttools brotli
@@ -29,30 +29,31 @@ OUT_OFL = os.path.join(ROOT, 'fonts', 'OFL.txt')
 # instance is enough. Keeping the variable wght axis would triple the file size.
 WEIGHT = 100
 
+# The built pages are the authoritative list of what the site can display,
+# so read those rather than the data files. Run `npm run build` first.
+def generated_pages():
+    pages = []
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        dirnames[:] = [d for d in dirnames
+                       if d not in ('node_modules', '.git', '.font-src', 'scripts', 'data', 'css')]
+        if 'index.html' in filenames:
+            pages.append(os.path.join(dirpath, 'index.html'))
+    return sorted(pages)
+
+
 # Characters that appear in the site's own content.
 def content_chars():
-    texts = []
-
-    def walk(node):
-        if isinstance(node, str):
-            texts.append(node)
-        elif isinstance(node, dict):
-            for value in node.values():
-                walk(value)
-        elif isinstance(node, list):
-            for value in node:
-                walk(value)
-
-    for path in sorted(glob.glob(os.path.join(ROOT, 'data', '*.json'))):
-        with open(path, encoding='utf-8') as f:
-            walk(json.load(f))
-    for path in [os.path.join(ROOT, 'index.html')] + sorted(glob.glob(os.path.join(ROOT, 'src', '*.ts'))):
-        with open(path, encoding='utf-8') as f:
-            texts.append(f.read())
+    pages = generated_pages()
+    if not pages:
+        sys.exit('no generated pages found — run `npm run build` first')
 
     chars = set()
-    for text in texts:
-        chars |= set(re.sub(r'<[^>]*>', '', text))
+    for path in pages:
+        with open(path, encoding='utf-8') as f:
+            # Drop tags (and with them <style>/<meta> attributes) to keep only
+            # the text that is actually painted.
+            text = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', f.read(), flags=re.S | re.I)
+            chars |= set(re.sub(r'<[^>]*>', '', text))
     return {c for c in chars if c.isprintable() and not c.isspace()}
 
 

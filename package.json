@@ -6,11 +6,13 @@
   "author": "Kohei Ishii",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && node scripts/check-font-coverage.mjs",
+    "build": "tsc && node dist/build.js && node scripts/check-font-coverage.mjs",
     "watch": "tsc --watch",
     "font": "python3 scripts/build-font.py"
   },
+  "type": "module",
   "devDependencies": {
-    "typescript": "^4.9.4"
+    "typescript": "^5.9.2",
+    "@types/node": "^22.10.2"
   }
 }
