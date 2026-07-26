@@ -11,7 +11,7 @@ import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)))
-const SKIP = new Set(['node_modules', '.git', '.font-src', 'scripts', 'data', 'css', 'fonts', 'posts'])
+const SKIP = new Set(['node_modules', '.git', '.font-src', 'scripts', 'data', 'css', 'fonts'])
 
 const pages = []
 const walk = (dir) => {
