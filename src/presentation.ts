@@ -9,7 +9,8 @@ function loadPresentation() {
             for (const section of d.sections) {
                 html += `<h3>${section.title}</h3><ol reversed>`
                 for (const item of section.items) {
-                    html += `<li>${item.authors},<br>"${item.title}",<br>${item.venue}<br>${item.date}</li>`
+                    const note = item.note ? ` ${item.note}` : ''
+                    html += `<li>${item.authors},<br>"${item.title}"${note},<br>${item.venue}<br>${item.date}</li>`
                 }
                 html += '</ol>'
             }

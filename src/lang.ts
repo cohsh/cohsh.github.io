@@ -3,6 +3,7 @@ function setLangJa() {
     <a href='javascript:setLangEn()'>English</a> / 日本語
     </h4>`
     lang = 'ja'
+    document.documentElement.lang = 'ja'
     reload()
 }
 
@@ -11,6 +12,7 @@ function setLangEn() {
     English / <a href='javascript:setLangJa()'>日本語</a>
     </h4>`
     lang = 'en'
+    document.documentElement.lang = 'en'
     reload()
 }
 

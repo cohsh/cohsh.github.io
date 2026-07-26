@@ -7,7 +7,8 @@
         "items": [
           {
             "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
-            "title": "First-Principles Inverse Design of Materials via Automatic Differentiation\" (in Japanese)",
+            "title": "First-Principles Inverse Design of Materials via Automatic Differentiation",
+            "note": "(in Japanese)",
             "venue": "2026 Spring Meeting, The Physical Society of Japan.",
             "date": "(March 25th, 2026, Online)"
           },
@@ -19,25 +20,29 @@
           },
           {
             "authors": "<u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino",
-            "title": "Evaluating the Importance of Second-Order Electron-Phonon Interactions in the Empty Lattice Model\" (in Japanese)",
+            "title": "Evaluating the Importance of Second-Order Electron-Phonon Interactions in the Empty Lattice Model",
+            "note": "(in Japanese)",
             "venue": "2024 Annual (79th) Meeting, The Physical Society of Japan.",
             "date": "(September 16th, 2024, Sapporo Campus, Hokkaido University)"
           },
           {
             "authors": "<u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino",
-            "title": "First-principles calculations of band gaps incorporating electron-phonon interactions to infinite order\" (in Japanese)",
+            "title": "First-principles calculations of band gaps incorporating electron-phonon interactions to infinite order",
+            "note": "(in Japanese)",
             "venue": "Autumn Meeting 2022, The Physical Society of Japan.",
             "date": "(September 12th, 2022, Ookayama Campus, Tokyo Institute of Technology)"
           },
           {
             "authors": "<u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino",
-            "title": "Development of first-principles calculation methods incorporating higher-order electron-phonon interactions\" (in Japanese)",
+            "title": "Development of first-principles calculation methods incorporating higher-order electron-phonon interactions",
+            "note": "(in Japanese)",
             "venue": "2022 Annual (77th) Meeting, The Physical Society of Japan.",
             "date": "(March 16th, 2022, Online)"
           },
           {
             "authors": "<u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino",
-            "title": "First-principles calculation of band gap correction of semiconductors by electron-phonon interactions\" (in Japanese)",
+            "title": "First-principles calculation of band gap correction of semiconductors by electron-phonon interactions",
+            "note": "(in Japanese)",
             "venue": "Autumn Meeting 2020, The Physical Society of Japan.",
             "date": "(September 10th, 2020, Online)"
           }
@@ -66,7 +71,8 @@
           },
           {
             "authors": "<u>Kohei Ishii</u>, Jun Haruyama, Osamu Sugino",
-            "title": "Development of first-principles methods for the incorporation of electron-multiphonon interactions\" (in Japanese)",
+            "title": "Development of first-principles methods for the incorporation of electron-multiphonon interactions",
+            "note": "(in Japanese)",
             "venue": "Autumn Meeting 2021, The Physical Society of Japan.",
             "date": "(September 21st, 2021, Online)"
           },

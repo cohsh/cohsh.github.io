@@ -11,7 +11,8 @@ function loadPresentation() {
             html += "<h3>".concat(section.title, "</h3><ol reversed>");
             for (var _b = 0, _c = section.items; _b < _c.length; _b++) {
                 var item = _c[_b];
-                html += "<li>".concat(item.authors, ",<br>\"").concat(item.title, "\",<br>").concat(item.venue, "<br>").concat(item.date, "</li>");
+                var note = item.note ? " ".concat(item.note) : '';
+                html += "<li>".concat(item.authors, ",<br>\"").concat(item.title, "\"").concat(note, ",<br>").concat(item.venue, "<br>").concat(item.date, "</li>");
             }
             html += '</ol>';
         }

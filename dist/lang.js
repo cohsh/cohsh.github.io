@@ -1,11 +1,13 @@
 function setLangJa() {
     document.getElementById('lang').innerHTML = "<h4>\n    <a href='javascript:setLangEn()'>English</a> / \u65E5\u672C\u8A9E\n    </h4>";
     lang = 'ja';
+    document.documentElement.lang = 'ja';
     reload();
 }
 function setLangEn() {
     document.getElementById('lang').innerHTML = "<h4>\n    English / <a href='javascript:setLangJa()'>\u65E5\u672C\u8A9E</a>\n    </h4>";
     lang = 'en';
+    document.documentElement.lang = 'en';
     reload();
 }
 function reload() {

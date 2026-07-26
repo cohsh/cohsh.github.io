@@ -5,6 +5,10 @@
   "repository": "git@github.com:cohsh/cohsh.github.io.git",
   "author": "Kohei Ishii",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
   "devDependencies": {
     "typescript": "^4.9.4"
   }
