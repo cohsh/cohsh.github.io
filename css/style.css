@@ -1,3 +1,13 @@
+/* Subset of Noto Sans JP holding only the characters this site uses (55 KB).
+   Regenerate with `npm run font` after adding new kanji. */
+@font-face {
+    font-family: "Noto Sans JP Subset";
+    src: url("../fonts/NotoSansJP-Thin-subset.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 @media screen and (max-device-width: 699px) {
     html {zoom: 80%}
 }
@@ -6,7 +16,7 @@
     html {zoom: 70%}
 }
 
-body {font-family: "Noto Sans JP", sans-serif; font-weight:100; color:#43341B}
+body {font-family: "Noto Sans JP Subset", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif; font-weight:100; color:#43341B}
 a {color: #005E15}
 
 header {width:100%;background-color:#A4CA68;text-align:center}

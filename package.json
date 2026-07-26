@@ -6,8 +6,9 @@
   "author": "Kohei Ishii",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "build": "tsc && node scripts/check-font-coverage.mjs",
+    "watch": "tsc --watch",
+    "font": "python3 scripts/build-font.py"
   },
   "devDependencies": {
     "typescript": "^4.9.4"
