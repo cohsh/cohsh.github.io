@@ -3,22 +3,39 @@
     "title": "Publication"
   },
   "ja": {
-    "title": "原著論文"
+    "title": "論文"
   },
-  "items": [
+  "sections": [
     {
-      "authors": "S. Yamada, Y. Noguchi, <u>K. Ishii</u>, D. Hirose, O. Sugino, and K. Ohno",
-      "title": "Development of the Bethe-Salpeter method considering second-order corrections for a GW electron-hole interaction kernel",
-      "links": [
-        { "label": "Phys. Rev. B 106, 045113", "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.106.045113" }
+      "title": { "en": "Journal Article", "ja": "原著論文" },
+      "items": [
+        {
+          "authors": "S. Yamada, Y. Noguchi, <u>K. Ishii</u>, D. Hirose, O. Sugino, and K. Ohno",
+          "title": "Development of the Bethe-Salpeter method considering second-order corrections for a GW electron-hole interaction kernel",
+          "links": [
+            { "label": "Phys. Rev. B 106, 045113", "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.106.045113" }
+          ]
+        },
+        {
+          "authors": "<u>K. Ishii</u>, J. Haruyama, and O. Sugino",
+          "title": "Optical representation of thermal nuclear fluctuation effect on band-gap renormalization",
+          "links": [
+            { "label": "Phys. Rev. B 104, 245144", "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.245144" },
+            { "label": "arXiv", "url": "https://arxiv.org/abs/2108.07384" }
+          ]
+        }
       ]
     },
     {
-      "authors": "<u>K. Ishii</u>, J. Haruyama, and O. Sugino",
-      "title": "Optical representation of thermal nuclear fluctuation effect on band-gap renormalization",
-      "links": [
-        { "label": "Phys. Rev. B 104, 245144", "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.245144" },
-        { "label": "arXiv", "url": "https://arxiv.org/abs/2108.07384" }
+      "title": { "en": "Preprint", "ja": "プレプリント" },
+      "items": [
+        {
+          "authors": "<u>K. Ishii</u>, H. Akai, T. Fukushima, H. Shinya, and K. Inui",
+          "title": "A Differentiable DFT-Based Framework for Inverse Materials Design",
+          "links": [
+            { "label": "arXiv", "url": "https://arxiv.org/abs/2606.25502" }
+          ]
+        }
       ]
     }
   ]

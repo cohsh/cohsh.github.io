@@ -22,13 +22,18 @@ export interface CVData {
     sections: { title: string; items: { period: string; description: string }[] }[]
 }
 
+// The papers themselves are language-independent, so only the headings are
+// keyed by language and the entries are shared between the two pages.
 export interface PublicationFile {
     en: { title: string }
     ja: { title: string }
-    items: {
-        authors: string
-        title: string
-        links: { label: string; url: string }[]
+    sections: {
+        title: Record<Lang, string>
+        items: {
+            authors: string
+            title: string
+            links: { label: string; url: string }[]
+        }[]
     }[]
 }
 
@@ -72,12 +77,16 @@ export const renderCV = (d: CVData): string => {
 }
 
 export const renderPublication = (file: PublicationFile, lang: Lang): string => {
-    let html = `<div><h2>${file[lang].title}</h2><ol reversed>`
-    for (const item of file.items) {
-        const links = item.links.map((l) => `[<a href="${l.url}">${l.label}</a>]`).join(', ')
-        html += `<li>${item.authors},<br>"${item.title}",<br>${links}</li>`
+    let html = `<div><h2>${file[lang].title}</h2>`
+    for (const section of file.sections) {
+        html += `<h3>${section.title[lang]}</h3><ol reversed>`
+        for (const item of section.items) {
+            const links = item.links.map((l) => `[<a href="${l.url}">${l.label}</a>]`).join(', ')
+            html += `<li>${item.authors},<br>"${item.title}",<br>${links}</li>`
+        }
+        html += '</ol>'
     }
-    return html + '</ol></div>'
+    return html + '</div>'
 }
 
 export const renderPresentation = (d: PresentationData): string => {
