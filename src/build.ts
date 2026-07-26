@@ -32,14 +32,26 @@ const presentation = load<Record<Lang, PresentationData>>('presentation.json')
 
 const css = read('css', 'style.css').trim()
 
+// Links that leave the site open in a new tab, so a visitor following a paper
+// or a profile does not lose the page they came from. This covers the anchors
+// written directly into data/*.json as well as the ones the renderers build,
+// because it runs over the finished HTML. Navigation within the site uses
+// root-relative hrefs and is left alone.
+const openExternallyInNewTab = (html: string): string =>
+    html.replace(/<a href="(https?:\/\/[^"]*)"/g,
+                 '<a href="$1" target="_blank" rel="noopener"')
+
 const content = (lang: Lang, page: Page): string => {
-    switch (page.key) {
-        case 'top': return renderTop(top[lang])
-        case 'research': return renderResearch(research[lang])
-        case 'cv': return renderCV(cv[lang])
-        case 'publication': return renderPublication(publication, lang)
-        case 'presentation': return renderPresentation(presentation[lang])
-    }
+    const html = ((): string => {
+        switch (page.key) {
+            case 'top': return renderTop(top[lang])
+            case 'research': return renderResearch(research[lang])
+            case 'cv': return renderCV(cv[lang])
+            case 'publication': return renderPublication(publication, lang)
+            case 'presentation': return renderPresentation(presentation[lang])
+        }
+    })()
+    return openExternallyInNewTab(html)
 }
 
 // The heading each page shows, taken verbatim from the data files.
@@ -61,7 +73,7 @@ const pageTitle = (lang: Lang, page: Page): string => {
 const sidebar = (lang: Lang, current: Page): string => {
     const items = PAGES.map((p) => {
         const cls = p.key === current.key ? ' class="current"' : ''
-        return `<li${cls}><a href="${url(lang, p.slug)}">${p.nav[lang]}</a></li>`
+        return `<li${cls}><a href="${url(lang, p.slug)}" data-route>${p.nav[lang]}</a></li>`
     })
     return `<ul class="side">${items.join('')}</ul>`
 }
@@ -69,9 +81,12 @@ const sidebar = (lang: Lang, current: Page): string => {
 const buildPage = (lang: Lang, page: Page): string => {
     const here = url(lang, page.slug)
     const there = url(OTHER[lang], page.slug)
+    // data-route marks the links the router may handle. Everything else —
+    // including links to other things under this domain, such as the blog —
+    // is left to the browser.
     const langLine = lang === 'en'
-        ? `English / <a href="${there}">日本語</a>`
-        : `<a href="${there}">English</a> / 日本語`
+        ? `English / <a href="${there}" data-route>日本語</a>`
+        : `<a href="${there}" data-route>English</a> / 日本語`
 
     return `<!DOCTYPE html>
 <html lang="${lang}">

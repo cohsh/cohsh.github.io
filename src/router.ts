@@ -72,13 +72,14 @@ const navigate = async (path: string, push: boolean): Promise<void> => {
     if (push) history.pushState(null, '', path)
 }
 
-// Only the sidebar and the language switch are handled here; every link in the
-// content itself points at another site and is left alone.
+// Only links the generator marked with data-route are handled here. Testing the
+// origin instead would also catch links to other things hosted on this domain,
+// such as the blog, which are separate sites and must load normally.
 const isInternal = (a: HTMLAnchorElement): boolean =>
+    a.hasAttribute('data-route') &&
     a.origin === location.origin &&
     !a.hasAttribute('target') &&
-    !a.hasAttribute('download') &&
-    a.pathname.endsWith('/')
+    !a.hasAttribute('download')
 
 document.addEventListener('click', (event: MouseEvent) => {
     if (event.defaultPrevented || event.button !== 0) return
