@@ -6,6 +6,13 @@
         "title": "Oral (Domestic)",
         "items": [
           {
+            "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
+            "title": "Inverse design of density of states and spectral functions via differentiable DFT",
+            "note": "(in Japanese)",
+            "venue": "2026 Annual (81st) Meeting, The Physical Society of Japan.",
+            "date": "(September 15th, 2026, Komaba Campus, The University of Tokyo)"
+          },
+          {
             "authors": "<u>Kohei Ishii</u>",
             "title": "A differentiable DFT-based framework for inverse materials design",
             "venue": "Theory Seminar, The Institute for Solid State Physics, The University of Tokyo.",
@@ -104,6 +111,12 @@
       {
         "title": "口頭（国内）",
         "items": [
+          {
+            "authors": "<u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地",
+            "title": "微分可能DFTによる電子状態密度・スペクトル関数の逆設計",
+            "venue": "日本物理学会第81回年次大会.",
+            "date": "（2026年9月15日, 東京大学駒場キャンパス）"
+          },
           {
             "authors": "<u>石井浩平</u>",
             "title": "A differentiable DFT-based framework for inverse materials design",
