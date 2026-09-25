@@ -16,8 +16,9 @@ import {
     type Lang, type Page,
 } from './site.js'
 import {
-    renderCV, renderPresentation, renderPublication, renderResearch, renderTop,
+    renderCV, renderPresentation, renderPublication, renderResearch, renderTop, renderWorks,
     type CVData, type PresentationData, type PublicationFile, type ResearchData, type TopData,
+    type WorksFile,
 } from './render.js'
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)))
@@ -29,6 +30,7 @@ const research = load<Record<Lang, ResearchData>>('research.json')
 const cv = load<Record<Lang, CVData>>('cv.json')
 const publication = load<PublicationFile>('publication.json')
 const presentation = load<Record<Lang, PresentationData>>('presentation.json')
+const works = load<WorksFile>('works.json')
 
 const css = read('css', 'style.css').trim()
 
@@ -49,6 +51,7 @@ const content = (lang: Lang, page: Page): string => {
             case 'cv': return renderCV(cv[lang])
             case 'publication': return renderPublication(publication, lang)
             case 'presentation': return renderPresentation(presentation[lang])
+            case 'works': return renderWorks(works, lang)
         }
     })()
     return openExternallyInNewTab(html)
@@ -62,6 +65,7 @@ const heading = (lang: Lang, page: Page): string | null => {
         case 'cv': return cv[lang].title
         case 'publication': return publication[lang].title
         case 'presentation': return presentation[lang].title
+        case 'works': return works[lang].title
     }
 }
 

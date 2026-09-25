@@ -37,6 +37,18 @@ export interface PublicationFile {
     }[]
 }
 
+// Like the papers, each work is a single entry shared by both pages, with only
+// its wording keyed by language, so the two lists cannot drift apart.
+export interface WorksFile {
+    en: { title: string }
+    ja: { title: string }
+    items: {
+        url: string
+        title: Record<Lang, string>
+        description: Record<Lang, string>
+    }[]
+}
+
 export interface PresentationData {
     title: string
     sections: {
@@ -101,4 +113,13 @@ export const renderPresentation = (d: PresentationData): string => {
         html += '</ol>'
     }
     return html + '</div>'
+}
+
+export const renderWorks = (file: WorksFile, lang: Lang): string => {
+    let html = `<div><h2>${file[lang].title}</h2><dl>`
+    for (const item of file.items) {
+        html += `<dt><a href="${item.url}">${item.title[lang]}</a></dt>` +
+                `<dd>${item.description[lang]}</dd>`
+    }
+    return html + '</dl></div>'
 }

@@ -12,6 +12,7 @@ export const PAGES = [
     { key: 'cv', slug: 'cv', nav: { en: 'CV', ja: '略歴' } },
     { key: 'publication', slug: 'publication', nav: { en: 'Publication', ja: '論文' } },
     { key: 'presentation', slug: 'presentation', nav: { en: 'Presentation', ja: '講演' } },
+    { key: 'works', slug: 'works', nav: { en: 'Works', ja: '制作' } },
 ];
 // Root-absolute URL of a page (the site is served from the domain root).
 export const url = (lang, slug) => {

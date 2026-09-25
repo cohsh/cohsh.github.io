@@ -50,3 +50,11 @@ export const renderPresentation = (d) => {
     }
     return html + '</div>';
 };
+export const renderWorks = (file, lang) => {
+    let html = `<div><h2>${file[lang].title}</h2><dl>`;
+    for (const item of file.items) {
+        html += `<dt><a href="${item.url}">${item.title[lang]}</a></dt>` +
+            `<dd>${item.description[lang]}</dd>`;
+    }
+    return html + '</dl></div>';
+};

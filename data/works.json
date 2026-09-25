@@ -1,0 +1,21 @@
+{
+  "en": {
+    "title": "Works"
+  },
+  "ja": {
+    "title": "制作"
+  },
+  "items": [
+    {
+      "url": "https://sugino.issp.u-tokyo.ac.jp",
+      "title": {
+        "en": "Website of the Sugino Group, The Institute for Solid State Physics, The University of Tokyo",
+        "ja": "東京大学物性研究所　杉野研究室　ウェブサイト"
+      },
+      "description": {
+        "en": "Created in August 2024, in use since July 2026 (responsible for updates until April 2025)",
+        "ja": "2024年8月制作、2026年7月使用開始（2025年4月まで更新を担当）"
+      }
+    }
+  ]
+}

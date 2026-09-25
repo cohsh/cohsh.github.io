@@ -98,7 +98,7 @@ document.addEventListener('click', (event: MouseEvent) => {
 addEventListener('popstate', () => void navigate(location.pathname, false))
 
 // Walk the sidebar and language links of each page until every page is cached.
-// All ten pages together are well under 40 KB.
+// All twelve pages together are under 50 KB.
 const warm = async (): Promise<void> => {
     const queue = [location.pathname]
     const seen = new Set(queue)

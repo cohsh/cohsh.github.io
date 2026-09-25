@@ -10,7 +10,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FONT, LANGS, OTHER, PAGES, ROUTER, SITE, SITE_NAME, url, } from './site.js';
-import { renderCV, renderPresentation, renderPublication, renderResearch, renderTop, } from './render.js';
+import { renderCV, renderPresentation, renderPublication, renderResearch, renderTop, renderWorks, } from './render.js';
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const read = (...parts) => readFileSync(join(root, ...parts), 'utf8');
 const load = (name) => JSON.parse(read('data', name));
@@ -19,6 +19,7 @@ const research = load('research.json');
 const cv = load('cv.json');
 const publication = load('publication.json');
 const presentation = load('presentation.json');
+const works = load('works.json');
 const css = read('css', 'style.css').trim();
 // Links that leave the site open in a new tab, so a visitor following a paper
 // or a profile does not lose the page they came from. This covers the anchors
@@ -34,6 +35,7 @@ const content = (lang, page) => {
             case 'cv': return renderCV(cv[lang]);
             case 'publication': return renderPublication(publication, lang);
             case 'presentation': return renderPresentation(presentation[lang]);
+            case 'works': return renderWorks(works, lang);
         }
     })();
     return openExternallyInNewTab(html);
@@ -46,6 +48,7 @@ const heading = (lang, page) => {
         case 'cv': return cv[lang].title;
         case 'publication': return publication[lang].title;
         case 'presentation': return presentation[lang].title;
+        case 'works': return works[lang].title;
     }
 };
 const pageTitle = (lang, page) => {

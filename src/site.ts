@@ -1,7 +1,7 @@
 // Shared description of the site's structure, used by the page generator.
 
 export type Lang = 'en' | 'ja'
-export type PageKey = 'top' | 'research' | 'cv' | 'publication' | 'presentation'
+export type PageKey = 'top' | 'research' | 'cv' | 'publication' | 'presentation' | 'works'
 
 export interface Page {
     key: PageKey
@@ -26,6 +26,7 @@ export const PAGES: Page[] = [
     { key: 'cv', slug: 'cv', nav: { en: 'CV', ja: '略歴' } },
     { key: 'publication', slug: 'publication', nav: { en: 'Publication', ja: '論文' } },
     { key: 'presentation', slug: 'presentation', nav: { en: 'Presentation', ja: '講演' } },
+    { key: 'works', slug: 'works', nav: { en: 'Works', ja: '制作' } },
 ]
 
 // Root-absolute URL of a page (the site is served from the domain root).

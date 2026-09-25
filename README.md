@@ -11,7 +11,7 @@ Kohei Ishii's Website — https://cohsh.github.io
 2. `npm run build`
 3. 生成された HTML ごとコミットする（GitHub Pages はビルドせず、そのまま配信するため）
 
-`npm run build` は TypeScript のコンパイル、10 ページの生成、フォントの収録漏れ検査をこの順で行う。
+`npm run build` は TypeScript のコンパイル、12 ページの生成、フォントの収録漏れ検査をこの順で行う。
 新しい漢字を含む内容を追加すると検査が失敗するので、その場合は `npm run font` でサブセットを作り直す。
 
 | コマンド | 内容 |
@@ -35,9 +35,9 @@ src/router.ts   ページ遷移（ブラウザで実行）
 scripts/build-font.py           フォントのサブセット生成
 scripts/check-font-coverage.mjs 収録漏れの検査
 
-index.html, cv/, research/, publication/, presentation/    生成物
-ja/ 以下に日本語版                                          生成物
-sitemap.xml, robots.txt                                    生成物
+index.html, cv/, research/, publication/, presentation/, works/    生成物
+ja/ 以下に日本語版                                                  生成物
+sitemap.xml, robots.txt                                            生成物
 ```
 
 `dist/router.js` は初期表示のあとに読み込まれ、残りのページを先読みしておく。
@@ -52,6 +52,7 @@ sitemap.xml, robots.txt                                    生成物
 | CV | `/cv/` | `/ja/cv/` |
 | Publication | `/publication/` | `/ja/publication/` |
 | Presentation | `/presentation/` | `/ja/presentation/` |
+| Works | `/works/` | `/ja/works/` |
 
 ## Branch
 - [main](https://github.com/cohsh/cohsh.github.io/tree/main)
