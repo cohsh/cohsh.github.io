@@ -65,6 +65,12 @@
         "title": "Poster (Domestic)",
         "items": [
           {
+            "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
+            "title": "微分可能DFTによる物質の逆設計",
+            "venue": "社会連携シンポジウム「生成AIが拓く物性・材料研究の新展開」,",
+            "date": "(August 31st, 2026, Kashiwanoha Campus Station Satellite, The University of Tokyo)"
+          },
+          {
             "authors": "<u>Kohei Ishii</u>, Michiharu Nakano, Masumi Sato, Tetsuya Fukushima, Makoto Saito, Takaki Sugiura, Kota Ido",
             "title": "電子状態密度を記述子とした機械学習による酸素空孔生成エネルギーの予測と酸素吸蔵材の探索",
             "venue": "スパコン共同利用研究会「計算物質科学の今と未来」,",
@@ -164,6 +170,12 @@
       {
         "title": "ポスター（国内）",
         "items": [
+          {
+            "authors": "<u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地",
+            "title": "微分可能DFTによる物質の逆設計",
+            "venue": "社会連携シンポジウム「生成AIが拓く物性・材料研究の新展開」.",
+            "date": "（2026年8月31日, 東京大学柏の葉キャンパス駅前サテライト）"
+          },
           {
             "authors": "<u>石井浩平</u>, 中野道晴, 佐藤万純, 福島鉄也, 齋藤信, 杉浦孝樹, 井戸康太",
             "title": "電子状態密度を記述子とした機械学習による酸素空孔生成エネルギーの予測と酸素吸蔵材の探索",
