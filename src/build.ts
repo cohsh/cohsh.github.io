@@ -12,7 +12,7 @@ import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import {
-    FONT, LANGS, OTHER, PAGES, ROUTER, SITE, SITE_NAME, url,
+    FONT, LANG_CHOICE_KEY, LANGS, OTHER, PAGES, ROUTER, SITE, SITE_NAME, url,
     type Lang, type Page,
 } from './site.js'
 import {
@@ -74,6 +74,34 @@ const pageTitle = (lang: Lang, page: Page): string => {
     return name ? `${name} | ${SITE_NAME}` : SITE_NAME
 }
 
+// The English top page is where most visitors enter, so it alone picks a
+// language for them. A visitor arriving from outside the site is sent to the
+// Japanese top page, before anything is painted, when their earlier choice on
+// the language switch (remembered by the router) — or, without one, their
+// browser — prefers Japanese. Arrivals from this site's own pages, reloads and
+// Back/Forward (a "/" left in the history was shown in English on purpose, and
+// after the router's pushState the referrer no longer says where it came from),
+// every other page, crawlers (which browse in English) and visitors without
+// JavaScript get exactly the page they asked for.
+const languageRedirect = (): string => {
+    const pages = LANGS.flatMap((lang) => PAGES.map((p) => url(lang, p.slug)))
+    return `<script>
+(function () {
+    var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0]
+    if (nav && (nav.type === 'reload' || nav.type === 'back_forward')) return
+    var from = document.referrer ? new URL(document.referrer) : null
+    if (from && from.origin === location.origin && ${JSON.stringify(pages)}.indexOf(from.pathname) >= 0) return
+    var choice = null
+    try { choice = localStorage.getItem(${JSON.stringify(LANG_CHOICE_KEY)}) } catch (e) {}
+    var lang = choice || (navigator.languages && navigator.languages[0]) || navigator.language || ''
+    if (!/^ja(-|$)/i.test(lang)) return
+    document.documentElement.style.visibility = 'hidden'
+    location.replace(${JSON.stringify(url('ja', ''))} + location.search + location.hash)
+})()
+</script>
+`
+}
+
 const sidebar = (lang: Lang, current: Page): string => {
     const items = PAGES.map((p) => {
         const cls = p.key === current.key ? ' class="current"' : ''
@@ -87,10 +115,12 @@ const buildPage = (lang: Lang, page: Page): string => {
     const there = url(OTHER[lang], page.slug)
     // data-route marks the links the router may handle. Everything else —
     // including links to other things under this domain, such as the blog —
-    // is left to the browser.
+    // is left to the browser. hreflang marks the language switch, whose choice
+    // the router remembers.
     const langLine = lang === 'en'
-        ? `English / <a href="${there}" data-route>日本語</a>`
-        : `<a href="${there}" data-route>English</a> / 日本語`
+        ? `English / <a href="${there}" hreflang="ja" data-route>日本語</a>`
+        : `<a href="${there}" hreflang="en" data-route>English</a> / 日本語`
+    const redirect = lang === 'en' && page.key === 'top' ? languageRedirect() : ''
 
     return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -104,7 +134,7 @@ const buildPage = (lang: Lang, page: Page): string => {
 <link rel="alternate" hreflang="ja" href="${SITE}${url('ja', page.slug)}">
 <link rel="alternate" hreflang="x-default" href="${SITE}${url('en', page.slug)}">
 <link rel="preload" href="${FONT}" as="font" type="font/woff2" crossorigin>
-<style>
+${redirect}<style>
 ${css}
 </style>
 </head>

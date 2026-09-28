@@ -6,6 +6,9 @@ export const SITE = 'https://cohsh.github.io';
 export const SITE_NAME = "Kohei Ishii's Website";
 export const FONT = '/fonts/NotoSansJP-Thin-subset.woff2';
 export const ROUTER = '/dist/router.js';
+// localStorage key for the language a visitor picked on the language switch.
+// src/router.ts writes it (under the same name) and the English top page reads it.
+export const LANG_CHOICE_KEY = 'preferred-language';
 export const PAGES = [
     { key: 'top', slug: '', nav: { en: 'Top', ja: 'トップ' } },
     { key: 'research', slug: 'research', nav: { en: 'Research', ja: '研究' } },

@@ -7,6 +7,8 @@
 // parts of the document that differ. Without JavaScript the same links still
 // work as ordinary navigation.
 const cache = new Map();
+// Same key as LANG_CHOICE_KEY in src/site.ts; the English top page reads it.
+const LANG_CHOICE_KEY = 'preferred-language';
 const pick = (root, selector) => root.querySelector(selector);
 const snapshot = (doc) => {
     const nav = pick(doc, '#lang');
@@ -72,6 +74,20 @@ const isInternal = (a) => a.hasAttribute('data-route') &&
     a.origin === location.origin &&
     !a.hasAttribute('target') &&
     !a.hasAttribute('download');
+// Remember the language picked on the language switch — the only links that
+// carry hreflang — so the top page can honour it on the next visit.
+const rememberLanguage = (a) => {
+    const lang = a.getAttribute('hreflang');
+    if (!lang)
+        return;
+    try {
+        localStorage.setItem(LANG_CHOICE_KEY, lang);
+    }
+    catch {
+        // Storage is unavailable (blocked, or a private window): the choice
+        // simply is not kept.
+    }
+};
 document.addEventListener('click', (event) => {
     if (event.defaultPrevented || event.button !== 0)
         return;
@@ -81,6 +97,7 @@ document.addEventListener('click', (event) => {
     const anchor = target?.closest('a');
     if (!anchor || !isInternal(anchor))
         return;
+    rememberLanguage(anchor);
     if (anchor.pathname === location.pathname) {
         event.preventDefault();
         return;

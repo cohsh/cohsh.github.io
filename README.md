@@ -54,6 +54,10 @@ sitemap.xml, robots.txt                                            生成物
 | Presentation | `/presentation/` | `/ja/presentation/` |
 | Works | `/works/` | `/ja/works/` |
 
+英語版のトップ（`/`）だけは、サイトの外から来た訪問者を必要に応じて日本語版のトップへ移す。
+言語切り替えで選んだ言語があればそれに（`dist/router.js` が localStorage に記録する）、なければブラウザの言語設定に従う。
+サイト内のページから来た場合、再読み込みや戻る・進むで開き直した場合、トップ以外のページ、JavaScript が無効な環境では、指定どおりのページをそのまま表示する。
+
 ## Branch
 - [main](https://github.com/cohsh/cohsh.github.io/tree/main)
 

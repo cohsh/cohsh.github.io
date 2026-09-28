@@ -16,6 +16,9 @@ interface Snapshot {
 
 const cache = new Map<string, Snapshot>()
 
+// Same key as LANG_CHOICE_KEY in src/site.ts; the English top page reads it.
+const LANG_CHOICE_KEY = 'preferred-language'
+
 const pick = (root: Document | ParentNode, selector: string): Element | null =>
     root.querySelector(selector)
 
@@ -81,12 +84,26 @@ const isInternal = (a: HTMLAnchorElement): boolean =>
     !a.hasAttribute('target') &&
     !a.hasAttribute('download')
 
+// Remember the language picked on the language switch — the only links that
+// carry hreflang — so the top page can honour it on the next visit.
+const rememberLanguage = (a: HTMLAnchorElement): void => {
+    const lang = a.getAttribute('hreflang')
+    if (!lang) return
+    try {
+        localStorage.setItem(LANG_CHOICE_KEY, lang)
+    } catch {
+        // Storage is unavailable (blocked, or a private window): the choice
+        // simply is not kept.
+    }
+}
+
 document.addEventListener('click', (event: MouseEvent) => {
     if (event.defaultPrevented || event.button !== 0) return
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
     const target = event.target as Element | null
     const anchor = target?.closest('a')
     if (!anchor || !isInternal(anchor)) return
+    rememberLanguage(anchor)
     if (anchor.pathname === location.pathname) {
         event.preventDefault()
         return
