@@ -11,10 +11,18 @@ export interface TopData {
     links: { label: string; url: string }[]
 }
 
-export interface ResearchData {
-    title: string
-    keywordsTitle: string
-    keywords: string[]
+// Each research topic is a single entry shared by both pages: its text is quoted
+// in the language it was written in, and only the heading and the line naming
+// where it comes from are keyed by language.
+export interface ResearchFile {
+    en: { title: string }
+    ja: { title: string }
+    topics: {
+        title: Record<Lang, string>
+        paragraphs: string[]
+        references: string[]
+        source: Record<Lang, string>
+    }[]
 }
 
 export interface CVData {
@@ -71,10 +79,20 @@ export const renderTop = (d: TopData): string => {
     return html + '</ul></div>'
 }
 
-export const renderResearch = (d: ResearchData): string =>
-    `<div><h2>${d.title}</h2><h3>${d.keywordsTitle}</h3><ul><li>` +
-    d.keywords.join('、') +
-    '</li></ul></div>'
+export const renderResearch = (file: ResearchFile, lang: Lang): string => {
+    let html = `<div><h2>${file[lang].title}</h2>`
+    for (const topic of file.topics) {
+        html += `<h3>${topic.title[lang]}</h3>`
+        for (const paragraph of topic.paragraphs) html += `<p>${paragraph}</p>`
+        if (topic.references.length > 0) {
+            html += '<ul>'
+            topic.references.forEach((ref, i) => { html += `<li>[${i + 1}] ${ref}</li>` })
+            html += '</ul>'
+        }
+        html += `<p>${topic.source[lang]}</p>`
+    }
+    return html + '</div>'
+}
 
 export const renderCV = (d: CVData): string => {
     let html = `<div><h2>${d.title}</h2>`

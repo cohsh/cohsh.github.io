@@ -11,9 +11,21 @@ export const renderTop = (d) => {
         html += `<li><a href="${link.url}">${link.label}</a></li>`;
     return html + '</ul></div>';
 };
-export const renderResearch = (d) => `<div><h2>${d.title}</h2><h3>${d.keywordsTitle}</h3><ul><li>` +
-    d.keywords.join('、') +
-    '</li></ul></div>';
+export const renderResearch = (file, lang) => {
+    let html = `<div><h2>${file[lang].title}</h2>`;
+    for (const topic of file.topics) {
+        html += `<h3>${topic.title[lang]}</h3>`;
+        for (const paragraph of topic.paragraphs)
+            html += `<p>${paragraph}</p>`;
+        if (topic.references.length > 0) {
+            html += '<ul>';
+            topic.references.forEach((ref, i) => { html += `<li>[${i + 1}] ${ref}</li>`; });
+            html += '</ul>';
+        }
+        html += `<p>${topic.source[lang]}</p>`;
+    }
+    return html + '</div>';
+};
 export const renderCV = (d) => {
     let html = `<div><h2>${d.title}</h2>`;
     for (const section of d.sections) {

@@ -17,7 +17,7 @@ import {
 } from './site.js'
 import {
     renderCV, renderPresentation, renderPublication, renderResearch, renderTop, renderWorks,
-    type CVData, type PresentationData, type PublicationFile, type ResearchData, type TopData,
+    type CVData, type PresentationData, type PublicationFile, type ResearchFile, type TopData,
     type WorksFile,
 } from './render.js'
 
@@ -26,7 +26,7 @@ const read = (...parts: string[]): string => readFileSync(join(root, ...parts), 
 const load = <T>(name: string): T => JSON.parse(read('data', name)) as T
 
 const top = load<Record<Lang, TopData>>('top.json')
-const research = load<Record<Lang, ResearchData>>('research.json')
+const research = load<ResearchFile>('research.json')
 const cv = load<Record<Lang, CVData>>('cv.json')
 const publication = load<PublicationFile>('publication.json')
 const presentation = load<Record<Lang, PresentationData>>('presentation.json')
@@ -47,7 +47,7 @@ const content = (lang: Lang, page: Page): string => {
     const html = ((): string => {
         switch (page.key) {
             case 'top': return renderTop(top[lang])
-            case 'research': return renderResearch(research[lang])
+            case 'research': return renderResearch(research, lang)
             case 'cv': return renderCV(cv[lang])
             case 'publication': return renderPublication(publication, lang)
             case 'presentation': return renderPresentation(presentation[lang])

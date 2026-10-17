@@ -31,7 +31,7 @@ const content = (lang, page) => {
     const html = (() => {
         switch (page.key) {
             case 'top': return renderTop(top[lang]);
-            case 'research': return renderResearch(research[lang]);
+            case 'research': return renderResearch(research, lang);
             case 'cv': return renderCV(cv[lang]);
             case 'publication': return renderPublication(publication, lang);
             case 'presentation': return renderPresentation(presentation[lang]);
