@@ -29,7 +29,7 @@ export const PAGES: Page[] = [
     { key: 'research', slug: 'research', nav: { en: 'Research', ja: '研究' } },
     { key: 'cv', slug: 'cv', nav: { en: 'CV', ja: '略歴' } },
     { key: 'publication', slug: 'publication', nav: { en: 'Publication', ja: '論文' } },
-    { key: 'presentation', slug: 'presentation', nav: { en: 'Presentation', ja: '講演' } },
+    { key: 'presentation', slug: 'presentation', nav: { en: 'Presentation', ja: '発表' } },
     { key: 'works', slug: 'works', nav: { en: 'Works', ja: '制作' } },
 ]
 
