@@ -73,6 +73,17 @@
         ]
       },
       {
+        "title": "Poster (International)",
+        "items": [
+          {
+            "authors": "<u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, Hikari Shinya, and Koji Inui",
+            "title": "Inverse Design of Band Structures via Differentiable DFT",
+            "venue": "2026 MRS Fall Meeting &amp; Exhibit.",
+            "date": "(December 1st, 2026, Hynes Convention Center, Boston, USA)"
+          }
+        ]
+      },
+      {
         "title": "Poster (Domestic)",
         "items": [
           {
@@ -186,6 +197,17 @@
             "title": "電子・フォノン相互作用による半導体のバンドギャップ補正の第一原理計算",
             "venue": "日本物理学会2020年秋季大会.",
             "date": "（2020年9月10日, オンライン）"
+          }
+        ]
+      },
+      {
+        "title": "ポスター（国際）",
+        "items": [
+          {
+            "authors": "<u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり, 乾幸地",
+            "title": "Inverse Design of Band Structures via Differentiable DFT",
+            "venue": "2026 MRS Fall Meeting &amp; Exhibit.",
+            "date": "（2026年12月1日, 米国ボストン ハインズ・コンベンションセンター）"
           }
         ]
       },
