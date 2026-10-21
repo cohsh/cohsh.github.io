@@ -50,7 +50,7 @@ export const renderPublication = (file, lang) => {
     return html + '</div>';
 };
 export const renderPresentation = (d) => {
-    let html = `<div><h2>${d.title}</h2>`;
+    let html = `<div><h2>${d.title}</h2><p>${d.legend}</p>`;
     for (const section of d.sections) {
         html += `<h3>${section.title}</h3><ol reversed>`;
         for (const item of section.items) {

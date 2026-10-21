@@ -59,6 +59,7 @@ export interface WorksFile {
 
 export interface PresentationData {
     title: string
+    legend: string
     sections: {
         title: string
         items: {
@@ -120,7 +121,7 @@ export const renderPublication = (file: PublicationFile, lang: Lang): string => 
 }
 
 export const renderPresentation = (d: PresentationData): string => {
-    let html = `<div><h2>${d.title}</h2>`
+    let html = `<div><h2>${d.title}</h2><p>${d.legend}</p>`
     for (const section of d.sections) {
         html += `<h3>${section.title}</h3><ol reversed>`
         for (const item of section.items) {
