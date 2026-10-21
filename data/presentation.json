@@ -15,6 +15,17 @@
         ]
       },
       {
+        "title": "Oral (International)",
+        "items": [
+          {
+            "authors": "Koji Inui*, <u>Kohei Ishii</u>, Hisazumi Akai, Tetsuya Fukushima, and Hikari Shinya",
+            "title": "A Differentiable DFT-Based Framework for Inverse Materials Design",
+            "venue": "2026 MRS Fall Meeting &amp; Exhibit.",
+            "date": "(November 30th, 2026, Hynes Convention Center, Boston, USA)"
+          }
+        ]
+      },
+      {
         "title": "Oral (Domestic)",
         "items": [
           {
@@ -146,6 +157,17 @@
             "title": "微分可能KKR-CPA法による物質の逆設計",
             "venue": "産総研 磁性理論ミーティング.",
             "date": "（2026年5月7日, オンライン）"
+          }
+        ]
+      },
+      {
+        "title": "口頭（国際）",
+        "items": [
+          {
+            "authors": "○乾幸地, <u>石井浩平</u>, 赤井久純, 福島鉄也, 新屋ひかり",
+            "title": "A Differentiable DFT-Based Framework for Inverse Materials Design",
+            "venue": "2026 MRS Fall Meeting &amp; Exhibit.",
+            "date": "（2026年11月30日, 米国ボストン ハインズ・コンベンションセンター）"
           }
         ]
       },
